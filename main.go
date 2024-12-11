@@ -20,7 +20,7 @@ func main() {
 	AdjMatGraph.AddEdge("C", "D")
 	AdjMatGraph.AddEdge("D", "E")
 
-	AdjMatGraph.PrintMatrix()
+	AdjMatGraph.PrintAdjMatGraph()
 
 	AdjListGraph := AdjListGraph{
 		AdjList: make(map[string][]string),

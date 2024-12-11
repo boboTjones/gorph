@@ -13,7 +13,7 @@ func (amg *AdjMatGraph) AddEdge(node1, node2 string) {
 	amg.Matrix[i][j] = 1
 }
 
-func (amg *AdjMatGraph) PrintMatrix() {
+func (amg *AdjMatGraph) PrintAdjMatGraph() {
 	fmt.Printf("   %v\n", amg.Nodes)
 	for i, row := range amg.Matrix {
 		fmt.Printf("%s: %v\n", amg.Nodes[i], row)
