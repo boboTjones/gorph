@@ -9,7 +9,7 @@ type AdjMatGraph struct {
 }
 
 func (amg *AdjMatGraph) AddEdge(node1, node2 string) {
-	i, j := g.NodeMap[node1], amg.NodeMap[node2]
+	i, j := amg.NodeMap[node1], amg.NodeMap[node2]
 	amg.Matrix[i][j] = 1
 }
 
